@@ -32,7 +32,7 @@ def scan_port(ip, port):
     sock.settimeout(0.5)
     result = sock.connect_ex((ip, port))
     sock.close()
-    return result == 0
+    return result == 0 
 
 def scan_common_ports(ip):
     open_ports = []
